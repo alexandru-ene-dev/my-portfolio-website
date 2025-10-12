@@ -1,5 +1,6 @@
+'use client'
 import Link from 'next/link'
-import { type Dispatch, type SetStateAction, useEffect, useState } from 'react';
+import { type Dispatch, type SetStateAction } from 'react';
 import Footer from './Footer';
 import SocialIcons from './SocialIcons';
 import clsx from 'clsx';
@@ -19,7 +20,7 @@ const Menu = (
   return (
     <div 
       className={clsx(
-        'fixed inset-0 z-10 max-w-100 bg-gray-200 p-5 font-bold overflow-y-auto -translate-x-full lg:p-3 lg:bg-transparent lg:relative lg:max-w-full  lg:translate-x-0 lg:opacity-100',
+        'fixed inset-0 z-10 max-w-100 bg-gray-300 p-5 font-bold overflow-y-auto -translate-x-full lg:p-3 lg:bg-transparent lg:relative lg:max-w-full  lg:translate-x-0 lg:opacity-100',
         isMenuVisible? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0',
         isMobile && !isResizing && 'transition-all duration-500',  
       )}>
@@ -30,13 +31,41 @@ const Menu = (
 
       <div className="flex flex-col gap-y-5 justify-between h-[calc(100%-44px)]">
         <nav>
-          <ul className="flex flex-col gap-5 lg:flex-row ">
-            <Link href="#about">About</Link>
-            <Link href="#projects">Projects</Link>
-            <Link href="/skills">Skills</Link>
-            <Link href="/blog">Blog</Link>
-            <Link href="/resume">Resume</Link>
-            <Link href="/contact">Contact</Link>
+          <ul className="flex flex-col lg:flex-row ">
+            <Link 
+              onClick={() => setIsMenuVisible(false)} 
+              className="p-1 lg:px-3 lg:hover:scale-120 transition-all duration-300" href="#home"
+            >Home</Link>
+
+            <Link 
+              onClick={() => setIsMenuVisible(false)} 
+              className="p-1 lg:px-3 lg:hover:scale-120 transition-all duration-300" href="#about"
+            >About</Link>
+
+            <Link 
+              onClick={() => setIsMenuVisible(false)} 
+              className="p-1 lg:px-3 lg:hover:scale-120 transition-all duration-300" href="#projects"
+            >Projects</Link>
+
+            <Link 
+              onClick={() => setIsMenuVisible(false)} 
+              className="p-1 lg:px-3 lg:hover:scale-120 transition-all duration-300" href="#skills"
+            >Skills</Link>
+
+            <Link 
+              onClick={() => setIsMenuVisible(false)} 
+              className="p-1 lg:px-3 lg:hover:scale-120 transition-all duration-300" href="#blog"
+            >Blog</Link>
+
+            <Link 
+              onClick={() => setIsMenuVisible(false)} 
+              className="p-1 lg:px-3 lg:hover:scale-120 transition-all duration-300" href="#resume"
+            >Resume</Link>
+
+            <Link 
+              onClick={() => setIsMenuVisible(false)} 
+              className="p-1 lg:px-3 lg:hover:scale-120 transition-all duration-300" href="#contact"
+            >Contact</Link>
           </ul>
         </nav>
 

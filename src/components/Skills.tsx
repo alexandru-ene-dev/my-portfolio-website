@@ -5,7 +5,7 @@ import SkillsList from './SkillsList';
 
 const Skills = () => {
   return (
-    <section className="relative max-w-[1400px] mx-auto p-5">
+    <section id="skills" className="relative max-w-[1400px] mx-auto scroll-mt-25">
 
       {/* <Image
         className="object-cover w-full h-full  max-w-[800px] absolute right-0" 
@@ -16,8 +16,8 @@ const Skills = () => {
       /> */}
 
       <div className="relative max-w-150">
-        <h2 className="text-[clamp(2.75rem,8vw,5rem)] font-bold">&lt;Skills /&gt;</h2>
-        <div className="bg-black h-2 absolute w-full"></div>
+        <h2 aria-label="Skills" className="flex gap-5 text-[clamp(2.75rem,8vw,5rem)] font-bold before:content-['<'] after:content-['/>'] text-black dark:text-gray-200">Skills</h2>
+        <div className="bg-black dark:bg-gray-200 h-[6px] lg:h-2 absolute w-full"></div>
       </div>
 
       <div className="mx-auto mt-15 flex justify-between flex-wrap gap-10 max-w-150">

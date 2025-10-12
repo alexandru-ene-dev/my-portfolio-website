@@ -13,7 +13,9 @@ export default function Header() {
 
 
   return (
-    <header className="fixed left-0 right-0 z-30 flex justify-between p-5 max-w-[1400px] mx-auto lg:items-center">
+    <header className="fixed left-0 right-0 z-30 flex justify-between p-5 lg:py-1 max-w-[1400px] mx-auto lg:items-center bg-gray-300 overflow-x-clip
+    after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-0 after:h-4 after:shadow-[0_4px_8px_rgba(0,0,0,0.15)] after:z-[-1]
+    ">
       <Hamburger setIsMenuVisible={setIsMenuVisible} />
       
       <Link href="#title">Alexandru Ene</Link>

@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const About = () => {
   return (
-    <section className="relative mx-auto flex justify-center items-center p-5">
+    <section id="about" className="relative mx-auto flex justify-center items-center scroll-mt-[64px] lg:scroll-mt-[80px]">
 
       {/* <Image
         className="object-cover w-full h-full max-w-[800px] absolute right-0" 
@@ -18,8 +18,8 @@ const About = () => {
       <div className="z-20 flex-grow">
 
         <div className="relative max-w-150">
-          <h2 id="about" className="text-[clamp(3.25rem,8vw,5rem)] font-bold">&lt;About /&gt;</h2>
-          <div className="bg-black h-2 absolute w-full"></div>
+          <h2 aria-label="About" className="flex gap-5 text-[clamp(3.25rem,8vw,5rem)] font-bold before:content-['<'] after:content-['/>'] text-black dark:text-gray-200">About</h2>
+          <div className="bg-black dark:bg-gray-200 h-[6px] lg:h-2 absolute w-full"></div>
         </div>
 
         <div className="mt-15 max-w-100 mx-auto sm:flex sm:justify-center sm:gap-5 sm:max-w-300 md:max-w-240 lg:gap-10">
@@ -33,7 +33,7 @@ const About = () => {
             />
           </div>
 
-          <div className="mt-5 space-y-5 sm:m-0 text-lg max-w-[450px] sm:w-1/2 font-medium text-gray-600">
+          <div className="mt-5 space-y-5 sm:m-0 text-lg max-w-[450px] sm:w-1/2 font-medium text-gray-600 dark:text-gray-300">
             <p>
               Hi, I'm Alex, a self-taught fullstack web developer, focused on doing things right and leveling up.
             </p>
