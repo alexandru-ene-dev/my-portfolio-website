@@ -29,7 +29,7 @@ const Resume = () => {
           className="block"
         >
           <Image
-            className="rounded-lg" 
+            className="rounded-lg filter brightness-90" 
             src={ResumePic} 
             height={500} 
             width={500} 

@@ -14,7 +14,13 @@ const SocialIcons = () => {
           href="mailto:alexandru.ene.dev@gmail.com" 
           aria-label="Send me an email"
         >
-          <Image src={EmailIcon} width={30} height={30} alt="Send me an Email" />
+          <Image 
+            className="dark:invert" 
+            src={EmailIcon} 
+            width={30} 
+            height={30} 
+            alt="Send me an Email" 
+          />
         </a>
 
         <a 
@@ -22,7 +28,8 @@ const SocialIcons = () => {
           target="_blank" 
           rel="noopener noreferrer"
         >
-          <Image 
+          <Image
+            className="dark:invert" 
             src={LinkedInIcon} 
             width={30} 
             height={30} 
@@ -35,7 +42,13 @@ const SocialIcons = () => {
           target="_blank" 
           rel="noopener noreferrer"
         >
-          <Image src={GitIcon} width={30} height={30} alt="Check out my GitHub" />
+          <Image 
+            className="dark:invert" 
+            src={GitIcon} 
+            width={30} 
+            height={30} 
+            alt="Check out my GitHub" 
+          />
         </a>
 
         <a 
@@ -43,13 +56,18 @@ const SocialIcons = () => {
           target="_blank" 
           rel="noopener noreferrer"
         >
-          <Image src={DevIcon} width={30} height={30} alt="See my work on Dev.to" />
+          <Image 
+            src={DevIcon} 
+            width={30} 
+            height={30} 
+            alt="See my work on Dev.to" 
+          />
         </a>
       </li>
 
       <li className="mt-2">
         <a 
-          className="block text-center text-sm"
+          className="block text-center text-sm text-black dark:text-gray-300"
           title="Send me a email" 
           href="mailto:alexandru.ene.dev@gmail.com" 
           aria-label="Send me an email"

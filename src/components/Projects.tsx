@@ -28,7 +28,7 @@ const Projects = () => {
           alt="" 
           />
 
-        <h3 className="text-lg font-bold">Progressio - E-commerce Web Platform</h3>
+        <h3 className="text-lg font-bold text-black dark:text-gray-200">Progressio - E-commerce Web Platform</h3>
 
         <p className="text-lg font-medium text-gray-600 dark:text-gray-300">Fullstack web platform that features product listing and search, cart and favorites system and authentication </p>
 

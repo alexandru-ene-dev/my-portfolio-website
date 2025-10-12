@@ -34,8 +34,14 @@ const Contact = () => {
         <div className="space-y-3">
           <h3 className="font-bold text-xl text-black dark:text-gray-200">Reach out to me</h3>
 
-          <p className="text-lg font-medium text-gray-600 dark:text-gray-300">Send me a message and I will be in touch soon!</p>
-          <p className="text-center text-lg font-bold my-7 text-black dark:text-gray-200">alexandru.ene.dev@gmail.com</p>
+          <p className="text-lg font-medium text-gray-600 dark:text-gray-300 mb-0">Send me a message and I will be in touch soon!</p>
+
+          <a 
+            href="mailto:alexandru.ene.dev@gmail.com" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="block text-center text-lg font-bold my-7 text-black dark:text-gray-200 hover:scale-110 focus:scale-110 transition-[scale] duration-300"
+          >alexandru.ene.dev@gmail.com</a>
 
           <a
             href="https://www.linkedin.com/in/alexandru-ene-dev" 
