@@ -1,0 +1,31 @@
+# Updates
+
+**v1** - 12.10.2025:
+
+- Created Next.js App
+- Created overall HTML structure
+- Added light/dark theme
+- Fixed close button from mobile menu
+- Added close menu on outside click
+- Added footer
+- Added save theme to local storage
+
+**v2** - 13.10.2025
+
+- Fixed main spacing
+- Fixed buttons focus
+- Fixed colors bugs
+- Fixed Readme
+- Added Skills Section infinite carousel
+
+**v3** - 14.10.2025
+
+14.10.2025
+- Optimized carousel images
+- Fixed padding in about section
+- Improved design and readability
+- Added decorative images
+- Fixed Skills Section Design
+
+
+More to come...

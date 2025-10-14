@@ -1,18 +1,19 @@
 import ProjectPic from '../../public/images/project.png';
+import DecorPic from '../../public/images/code.png';
 import Image from 'next/image';
 
 
 const Projects = () => {
   return (
-    <section id="projects" className="relative mx-auto scroll-mt-[64px] lg:scroll-mt-[80px]">
+    <section id="projects" className="relative isolate mx-auto scroll-mt-[64px] lg:scroll-mt-[80px]">
 
-      {/* <Image
-        className="object-cover w-full h-full  max-w-[800px] absolute right-0" 
-        src={PlayGuitarPic} 
-        height={500} 
-        width={500} 
+      <Image
+        className="opacity-20 lg:opacity-25 lg:object-fill lg:w-[60%] absolute -z-10 filter contrast-0 max-w-150 max-h-150 -top-10 left-0 sm:right-0 sm:left-auto sm:max-w-700 sm:max-h-700" 
+        src={DecorPic} 
+        height={700} 
+        width={700} 
         alt="" 
-      /> */}
+      />
 
       <div className="relative max-w-150 ml-auto mr-0">
         <h2 aria-label="Projects" className="flex gap-5 justify-end text-[clamp(2.75rem,8vw,5rem)] font-bold text-right before:content-['<'] after:content-['/>'] text-black dark:text-gray-200">Projects</h2>
@@ -26,7 +27,7 @@ const Projects = () => {
           height={500} 
           width={500} 
           alt="" 
-          />
+        />
 
         <h3 className="text-lg font-bold text-black dark:text-gray-200">Progressio - E-commerce Web Platform</h3>
 
@@ -36,7 +37,7 @@ const Projects = () => {
           href="https://progressio-ecommerce-website.vercel.app" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="block bg-black text-white dark:bg-gray-800 dark:text-gray-200 px-5 py-3 w-full cursor-pointer font-bold rounded-md hover:bg-gray-700 transition-colors duration-300 text-lg text-center"
+          className="block bg-black text-white dark:bg-gray-800 dark:text-gray-200 px-5 py-3 w-full cursor-pointer font-bold rounded-md hover:bg-gray-600 focus:bg-gray-600 dark:hover:bg-gray-700 dark:focus:bg-gray-700 transition-colors duration-300 text-lg text-center"
         >
           Show Project -&gt;
         </a>

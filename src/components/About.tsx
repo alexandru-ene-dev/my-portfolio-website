@@ -1,31 +1,45 @@
 import PictureOfMe from '../../public/images/me.jpg';
-import PlayGuitarPic from '../../public/images/guitar.jpg';
+import CogIcon from '../../public/images/cog.png';
 import Image from 'next/image';
 
 
 const About = () => {
   return (
-    <section id="about" className="relative mx-auto flex justify-center items-center scroll-mt-[64px] lg:scroll-mt-[80px]">
-
-      {/* <Image
-        className="object-cover w-full h-full max-w-[800px] absolute right-0" 
-        src={PlayGuitarPic} 
-        height={500} 
-        width={500} 
+    <section id="about" className="relative isolate mx-auto sm:flex sm:justify-center sm:items-center scroll-mt-[64px] lg:scroll-mt-[80px]">
+      <Image
+        className="absolute -z-20 top-0 right-0 opacity-4 dark:opacity-8 max-w-40 dark:invert [animation-name:spin] [animation-duration:10s] [animation-timing-function:linear] [--tw-keyframe-spin:from{transform:rotate(0deg);},to{transform:rotate(360deg);}] [animation-iteration-count:infinite] [animation-direction:reverse]"  
+        src={CogIcon} 
+        height={200} 
+        width={200} 
         alt="" 
-      /> */}
+      />
+
+      <Image
+        className="absolute -z-20 top-20 right-30 opacity-4 dark:opacity-8 max-w-40 dark:invert [animation-name:spin] [animation-duration:10s] [animation-timing-function:linear] [--tw-keyframe-spin:from{transform:rotate(0deg);},to{transform:rotate(360deg);}] [animation-iteration-count:infinite]" 
+        src={CogIcon} 
+        height={200} 
+        width={200} 
+        alt="" 
+      />
+
+      <Image
+        className="absolute -z-20 top-100 -left-10 opacity-3 dark:opacity-8 max-w-50 sm:max-w-70 dark:invert [animation-name:spin] [animation-duration:20s] [animation-timing-function:linear] [--tw-keyframe-spin:from{transform:rotate(0deg);},to{transform:rotate(360deg);}] [animation-iteration-count:infinite]" 
+        src={CogIcon} 
+        height={700} 
+        width={700} 
+        alt="" 
+      />
 
       <div className="z-20 flex-grow">
-
         <div className="relative max-w-150">
           <h2 aria-label="About" className="flex gap-5 text-[clamp(3.25rem,8vw,5rem)] font-bold before:content-['<'] after:content-['/>'] text-black dark:text-gray-200">About</h2>
           <div className="bg-black dark:bg-gray-200 h-[6px] lg:h-2 absolute w-full"></div>
         </div>
 
         <div className="mt-15 max-w-100 mx-auto sm:flex sm:justify-center sm:gap-5 sm:max-w-300 md:max-w-240 lg:gap-10">
-          <div className="max-w-[450px]">
+          <div className="relative max-w-[450px] isolate">
             <Image
-              className="w-full h-full object-cover" 
+              className="w-full h-full max-h-[400px] object-cover rounded-full" 
               src={PictureOfMe} 
               height={300} 
               width={300} 
@@ -33,7 +47,7 @@ const About = () => {
             />
           </div>
 
-          <div className="mt-5 space-y-5 sm:m-0 text-lg max-w-[450px] sm:w-1/2 font-medium text-gray-600 dark:text-gray-300">
+          <div className="mt-5 space-y-5 sm:m-0 text-lg max-w-[450px] sm:w-1/2 font-medium text-gray-600 dark:text-gray-300 text-justify">
             <p>
               Hi, I'm Alex, a self-taught fullstack web developer, focused on doing things right and leveling up.
             </p>

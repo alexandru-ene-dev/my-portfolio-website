@@ -97,7 +97,7 @@ const Menu = (
         <div className="lg:hidden mt-8">
           <SocialIcons />
 
-          <div className="text-sm text-gray-500 font-medium mt-8">
+          <div className="text-sm text-gray-400 dark:text-gray-500 font-medium mt-8">
             <Footer />
           </div>
         </div>

@@ -1,19 +1,27 @@
-import ProjectPic from '../../public/images/project.png';
-import Image from 'next/image';
 import SkillsList from './SkillsList';
+import SkillsCarousel from './SkillsCarousel';
+import lightBulbIcon from '../../public/icons/light-bulb.svg';
+import Image from 'next/image';
 
 
 const Skills = () => {
   return (
     <section id="skills" className="relative max-w-[1400px] mx-auto scroll-mt-25">
 
-      {/* <Image
-        className="object-cover w-full h-full  max-w-[800px] absolute right-0" 
-        src={PlayGuitarPic} 
-        height={500} 
-        width={500} 
-        alt="" 
-      /> */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute top-[60%] left-[80%] 408:top-20 -translate-1/2 w-[800px] h-[800px] rounded-full dark:[background-image:radial-gradient(circle_at_center,_rgba(247,192,72,0.3)_0%,_transparent_50%)] animate-pulse"></div>
+      </div>
+
+      <div className="top-[60%] left-[80%] -translate-1/2 absolute 408:top-20 408:-rotate-20 flex justify-center items-center w-50 h-50 sm:w-70">
+        <Image 
+          className="opacity-5 dark:opacity-10 dark:invert" 
+          src={lightBulbIcon} 
+          width={700} 
+          height={700} 
+          alt=""
+        />
+
+      </div>
 
       <div className="relative max-w-150">
         <h2 aria-label="Skills" className="flex gap-5 text-[clamp(2.75rem,8vw,5rem)] font-bold before:content-['<'] after:content-['/>'] text-black dark:text-gray-200">Skills</h2>
@@ -23,6 +31,8 @@ const Skills = () => {
       <div className="mx-auto mt-15 flex justify-between flex-wrap gap-10 max-w-150">
         <SkillsList />
       </div>
+
+      <SkillsCarousel />
     </section>
   );
 };

@@ -1,18 +1,18 @@
-import ResumePic from '../../public/images/resume-button.png';
+import DecorativePic from '../../public/images/network-node.png';
 import Image from 'next/image';
 
 
 const Contact = () => {
   return (
-    <section id="contact" className="relative mx-auto scroll-mt-[64px] lg:scroll-mt-[80px]">
+    <section id="contact" className="relative isolate mx-auto scroll-mt-[64px] lg:scroll-mt-[80px]">
 
-      {/* <Image
-        className="object-cover w-full h-full  max-w-[800px] absolute right-0" 
-        src={PlayGuitarPic} 
-        height={500} 
-        width={500} 
+      <Image
+        className="max-w-[800px] absolute -z-10 right-0 filter contrast-0 opacity-12" 
+        src={DecorativePic} 
+        height={1000} 
+        width={1000} 
         alt="" 
-      /> */}
+      />
 
       <div className="relative max-w-150 ml-auto mr-0">
         <h2 aria-label="Contact" className="flex justify-end gap-5 text-[clamp(2.75rem,8vw,5rem)] font-bold text-right before:content-['<'] after:content-['/>'] text-black dark:text-gray-200">Contact</h2>
@@ -47,7 +47,7 @@ const Contact = () => {
             href="https://www.linkedin.com/in/alexandru-ene-dev" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="block bg-black text-white dark:bg-gray-800 dark:text-gray-200 px-5 py-3 w-full cursor-pointer font-bold rounded-md hover:bg-gray-700 transition-colors duration-300 text-center text-lg"
+            className="block bg-black text-white dark:bg-gray-800 dark:text-gray-200 px-5 py-3 w-full cursor-pointer font-bold rounded-md hover:bg-gray-600 focus:bg-gray-600 dark:hover:bg-gray-700 dark:focus:bg-gray-700 transition-colors duration-300 text-center text-lg"
           >
             LinkedIn -&gt;
           </a>
@@ -56,7 +56,7 @@ const Contact = () => {
             href=" https://github.com/alexandru-ene-dev" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="block bg-black text-white dark:bg-gray-800 dark:text-gray-200 px-5 py-3 w-full cursor-pointer font-bold rounded-md hover:bg-gray-700 transition-colors duration-300 text-center text-lg"
+            className="block bg-black text-white dark:bg-gray-800 dark:text-gray-200 px-5 py-3 w-full cursor-pointer font-bold rounded-md hover:bg-gray-600 focus:bg-gray-600 dark:hover:bg-gray-700 dark:focus:bg-gray-700 transition-colors duration-300 text-center text-lg"
           >
             GitHub -&gt;
           </a>
@@ -65,7 +65,7 @@ const Contact = () => {
             href="https://dev.to/alexandru-ene-dev" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="block bg-black text-white dark:bg-gray-800 dark:text-gray-200 px-5 py-3 w-full cursor-pointer font-bold rounded-md hover:bg-gray-700 transition-colors duration-300 text-center text-lg"
+            className="block bg-black text-white dark:bg-gray-800 dark:text-gray-200 px-5 py-3 w-full cursor-pointer font-bold rounded-md hover:bg-gray-600 focus:bg-gray-600 dark:hover:bg-gray-700 dark:focus:bg-gray-700 transition-colors duration-300 text-center text-lg"
           >
             Dev.to -&gt;
           </a> 

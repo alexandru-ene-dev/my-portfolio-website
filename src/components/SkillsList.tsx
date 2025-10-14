@@ -2,7 +2,7 @@ const SkillsList = () => {
   return (
     <>
       <div className="space-y-3">
-        <h3 className="font-bold text-2xl dark:text-gray-200">Frontend</h3>
+        <h3 className="font-bold text-2xl sm:text-3xl dark:text-gray-200">Frontend</h3>
 
         <ul className="text-lg font-medium text-gray-600 dark:text-gray-300">
           <li>Next.js</li>
@@ -16,18 +16,19 @@ const SkillsList = () => {
       </div>
 
       <div className="space-y-3">
-        <h3 className="font-bold text-2xl dark:text-gray-200">Backend</h3>
+        <h3 className="font-bold text-2xl sm:text-3xl dark:text-gray-200">Backend</h3>
 
         <ul className="text-lg font-medium text-gray-600 dark:text-gray-300">
           <li>Node.js</li>
           <li>Express.js</li>
           <li>MongoDB</li>
           <li>SQL</li>
+          <li>PostgreSQL</li>
         </ul>
       </div>
 
-      <div className="xxxs:mx-auto xxs:mx-0 space-y-3">
-        <h3 className="font-bold text-2xl dark:text-gray-200">Tools</h3>
+      <div className="xxxs:mx-auto 408:mx-0 space-y-3">
+        <h3 className="font-bold text-2xl sm:text-3xl dark:text-gray-200">Tools</h3>
 
         <ul className="text-lg font-medium text-gray-600 dark:text-gray-300">
           <li>Git</li>

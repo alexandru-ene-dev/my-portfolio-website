@@ -7,6 +7,7 @@
 @theme {
   --breakpoint-xxxs: 300px;
   --breakpoint-xxs: 370px;
+  --breakpoint-408: 408px;
   --color-dark-5: oklch(20% 0 270);
   --color-dark-0: oklch(0% 0 0);
 }
@@ -19,5 +20,40 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+
+
+.carousel-track-wrap {
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll 70s linear infinite; 
+}
+
+.carousel-track-wrap:hover .carousel-track {
+  animation-play-state: paused;
+}
+
+.slide {
+  width: 200px; 
+  height: 100px;
+  flex-shrink: 0; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-4180px); 
+  }
 }
 
