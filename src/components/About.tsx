@@ -1,11 +1,19 @@
+'use client';
 import PictureOfMe from '../../public/images/me.jpg';
 import CogIcon from '../../public/images/cog.png';
 import Image from 'next/image';
+import useScrollAnimation from '@/hooks/useScrollAnimation';
 
 
 const About = () => {
+  const ref = useScrollAnimation('left');
+
   return (
-    <section id="about" className="relative isolate mx-auto sm:flex sm:justify-center sm:items-center scroll-mt-[64px] lg:scroll-mt-[80px]">
+    <section
+      ref={ref} 
+      id="about" 
+      className="relative isolate mx-auto sm:flex sm:justify-center sm:items-center scroll-mt-[64px] lg:scroll-mt-[80px]"
+    >
       <Image
         className="absolute -z-20 top-0 right-0 opacity-4 dark:opacity-8 max-w-40 dark:invert [animation-name:spin] [animation-duration:10s] [animation-timing-function:linear] [--tw-keyframe-spin:from{transform:rotate(0deg);},to{transform:rotate(360deg);}] [animation-iteration-count:infinite] [animation-direction:reverse]"  
         src={CogIcon} 
@@ -53,7 +61,7 @@ const About = () => {
             </p>
 
             <p>
-              Over the past 12+ months of  consistent learning, the bugs and struggles have shaped me the most. They've taught me resilience and patience and made me care deeply about the quality of my work.
+              Over the past 12+ months of  consistent learning, the bugs and struggles have shaped me the most as a developer. They've taught me resilience and patience and made me care deeply about the quality of my work.
             </p>
 
             <p>

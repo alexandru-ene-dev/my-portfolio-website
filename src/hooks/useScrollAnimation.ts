@@ -1,0 +1,43 @@
+'use client';
+import { useRef, useEffect } from 'react';
+import { gsap } from 'gsap'; 
+import { ScrollTrigger } from 'gsap/ScrollTrigger'; 
+
+
+const useScrollAnimation = (direction: string) => {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    if (!ref.current) return;
+
+    const scope = ref.current;
+
+    gsap.registerPlugin(ScrollTrigger);
+    
+    let ctx = gsap.context(() => {    
+      const xStart = direction === 'left' ? -200 : 200;
+
+      gsap.from(scope, {
+        opacity: 0,   
+        x: xStart,    
+        scale: 0.85, 
+        duration: 1.5,
+        ease: "power3.out",
+
+        scrollTrigger: {
+          trigger: scope,
+          start: "top 80%", 
+          toggleActions: "play none none reverse",
+        },
+      });
+
+      }, scope); 
+
+      return () => ctx.revert(); 
+
+  }, [direction]); 
+
+  return ref;
+};
+
+export default useScrollAnimation;

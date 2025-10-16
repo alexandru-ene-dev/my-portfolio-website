@@ -1,10 +1,15 @@
+'use client'
 import DecorPic from '../../public/images/blog-decor.png';
 import Image from 'next/image';
+import useScrollAnimation from '@/hooks/useScrollAnimation';
 
 
 const Blog = () => {
+  const ref = useScrollAnimation('right');
+
+  
   return (
-    <section id="blog" className="relative isolate mx-auto scroll-mt-[64px] lg:scroll-mt-[80px]">
+    <section ref={ref} id="blog" className="relative isolate mx-auto scroll-mt-[64px] lg:scroll-mt-[80px]">
 
       <Image
         className="block max-w-100 max-h-100 w-full h-full opacity-20 lg:opacity-25 lg:object-fill lg:w-[60%] right-0 absolute -top-20 md:max-w-400 md:max-h-400 md:top-0 -z-10 filter contrast-0 -rotate-20" 

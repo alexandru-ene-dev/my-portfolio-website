@@ -1,11 +1,15 @@
+'use client';
 import ResumePic from '../../public/images/resume.png';
 import Chart from '../../public/images/chart.png';
 import Image from 'next/image';
+import useScrollAnimation from '@/hooks/useScrollAnimation';
 
 
 const Resume = () => {
+  const ref = useScrollAnimation('left');
+  
   return (
-    <section id="resume" className="relative isolate mx-auto scroll-mt-[64px] lg:scroll-mt-[80px]">
+    <section ref={ref} id="resume" className="relative isolate mx-auto scroll-mt-[64px] lg:scroll-mt-[80px]">
 
       <Image
         className="block w-full h-full opacity-10 lg:object-fill lg:w-[60%] -left-10 absolute -z-10 filter contrast-0 -rotate-15" 

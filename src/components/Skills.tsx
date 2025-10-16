@@ -1,12 +1,17 @@
+'use client';
 import SkillsList from './SkillsList';
 import SkillsCarousel from './SkillsCarousel';
 import lightBulbIcon from '../../public/icons/light-bulb.svg';
 import Image from 'next/image';
+import useScrollAnimation from '@/hooks/useScrollAnimation';
 
 
 const Skills = () => {
+  const ref = useScrollAnimation('left');
+
+
   return (
-    <section id="skills" className="relative max-w-[1400px] mx-auto scroll-mt-25">
+    <section ref={ref} id="skills" className="relative max-w-[1400px] mx-auto scroll-mt-25">
 
       <div className="absolute inset-0 z-0">
         <div className="absolute top-[60%] left-[80%] 408:top-20 -translate-1/2 w-[800px] h-[800px] rounded-full dark:[background-image:radial-gradient(circle_at_center,_rgba(247,192,72,0.3)_0%,_transparent_50%)] animate-pulse"></div>

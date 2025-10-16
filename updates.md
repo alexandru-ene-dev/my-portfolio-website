@@ -10,6 +10,8 @@
 - Added footer
 - Added save theme to local storage
 
+---
+
 **v2** - 13.10.2025
 
 - Fixed main spacing
@@ -18,14 +20,26 @@
 - Fixed Readme
 - Added Skills Section infinite carousel
 
+---
+
 **v3** - 14.10.2025
 
-14.10.2025
 - Optimized carousel images
 - Fixed padding in about section
 - Improved design and readability
 - Added decorative images
 - Fixed Skills Section Design
+
+---
+
+**v4** - 15.10.2025
+
+- Implemented scroll animations with GSAP
+- Fixed Theme Flicker
+
+---
+
+**v5** - 16.10.2025
 
 
 More to come...

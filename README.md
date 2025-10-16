@@ -1,4 +1,4 @@
-# Alexandru Ene - My Resume as A Fullstack Developer
+# Alexandru Ene - My Resume as A Web Developer
 
 ## Description
 

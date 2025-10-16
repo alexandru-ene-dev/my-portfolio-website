@@ -1,10 +1,14 @@
+'use client';
 import DecorativePic from '../../public/images/network-node.png';
 import Image from 'next/image';
+import useScrollAnimation from '@/hooks/useScrollAnimation';
 
 
 const Contact = () => {
+  const ref = useScrollAnimation('right');
+
   return (
-    <section id="contact" className="relative isolate mx-auto scroll-mt-[64px] lg:scroll-mt-[80px]">
+    <section ref={ref} id="contact" className="relative isolate mx-auto scroll-mt-[64px] lg:scroll-mt-[80px]">
 
       <Image
         className="max-w-[800px] absolute -z-10 right-0 filter contrast-0 opacity-12" 

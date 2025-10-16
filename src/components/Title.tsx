@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Title = () => {
   return (
-    <section id="title" className="relative h-[100vh] max-w-[1400px] mx-auto flex items-center">
+    <section id="home" className="relative h-[100vh] max-w-[1400px] mx-auto flex items-center">
       <Image 
         className="object-cover w-full h-full max-w-[800px] contrast-100 saturate-100 right-0 absolute" 
         src={LaptopPic} 

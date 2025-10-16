@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from '@/components/Header';
-import Script from 'next/script';
 import Footer from "@/components/Footer";
 
 
@@ -9,6 +8,19 @@ export const metadata: Metadata = {
   title: "Alexandru Ene - Fullstack Web Developer",
   description: "A single-page portfolio website created with Next.js and styled with Tailwindcss by Alexandru Ene",
 };
+
+const themeInitializerScript = `
+  (function () {
+    try {
+      const theme = localStorage.getItem('theme');
+      if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    } catch (e) {}
+  })();
+`
 
 export default function RootLayout({
   children,
@@ -18,20 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <Script strategy="beforeInteractive">
-          {`
-            (function () {
-              try {
-                const theme = localStorage.getItem('theme');
-                if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                  document.documentElement.classList.add('dark');
-                } else {
-                  document.documentElement.classList.remove('dark');
-                }
-              } catch (e) {}
-            })();
-          `}
-        </Script>      
+        <script dangerouslySetInnerHTML={{ __html: themeInitializerScript }}/>     
       </head>
 
       <body className="bg-gray-300 dark:bg-[hsl(220,43%,4%)]">

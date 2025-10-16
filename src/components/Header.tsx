@@ -3,8 +3,11 @@ import Link from 'next/link';
 import { useState } from 'react';
 import Hamburger from './Hamburger';
 import Menu from './Menu';
+
 import ThemeToggle from './ThemeToggle';
 import useIsMobile from '@/hooks/useIsMobile';
+import Image from 'next/image';
+import logo from '../../public/icons/logo.png';
 
 
 export default function Header() {
@@ -18,7 +21,12 @@ export default function Header() {
     ">
       <Hamburger setIsMenuVisible={setIsMenuVisible} />
       
-      <Link className="font-bold hover:scale-115 focus:scale-115 transition-[scale] duration-300" href="#title">Alexandru Ene</Link>
+      <Link 
+        className="font-bold hover:scale-105 focus:scale-105 transition-[scale] duration-300" 
+        href="#home"
+      >
+        <Image className="dark:invert max-w-20 max-h-20 dark:opacity-90" src={logo} width={70} height={70} alt="Alexandru Ene's logo" />
+      </Link>
       
       <div className="flex gap-5 items-center">
         <nav>
