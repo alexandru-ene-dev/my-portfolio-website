@@ -42,7 +42,7 @@ const useIsMobile = (breakpoint: number = 1024) => {
 
     window.addEventListener('resize', checkScreen);
     return () => window.removeEventListener('resize', checkScreen);
-  }, []);
+  }, [breakpoint]);
 
   return [ isMobile, isResizing ];
 };

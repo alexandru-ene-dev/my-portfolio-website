@@ -2,17 +2,15 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import Hamburger from './Hamburger';
-import Menu from './Menu';
 
+import Menu from './Menu';
 import ThemeToggle from './ThemeToggle';
-import useIsMobile from '@/hooks/useIsMobile';
 import Image from 'next/image';
 import logo from '../../public/icons/logo.png';
 
 
 export default function Header() {
   const [ isMenuVisible, setIsMenuVisible ] = useState<boolean>(false);
-  const isMobile = useIsMobile();
 
 
   return (

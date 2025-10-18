@@ -27,7 +27,7 @@ const Contact = () => {
 
       <div className="max-w-120 mt-15 space-y-10">
         <div className="space-y-3">
-          <h3 className="font-bold text-xl text-black dark:text-gray-200">I'm available for:</h3>
+          <h3 className="font-bold text-xl text-black dark:text-gray-200">I&apos;m available for:</h3>
 
           <ul className="text-lg font-medium text-gray-600 dark:text-gray-300">
             <li>Open for work</li>

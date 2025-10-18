@@ -27,11 +27,11 @@ const Blog = () => {
 
       <div className="mt-15 space-y-5 max-w-120 text-lg font-medium text-gray-600 dark:text-gray-300">       
         <p>
-          I  am documenting my learning journey on dev.to community, where I share things like technical insights, beginner-friendly tutorials and lessons from the challenges I run into.
+          I am documenting my learning journey on dev.to community, where I share things like technical insights, beginner-friendly tutorials and lessons from the challenges I run into.
         </p>
         
         <p>
-          I realized writing and explaining concepts in a way that makes sense to me and (hopefully) to others, makes me a better developer. It's also my way of giving back. 
+          I realized writing and explaining concepts in a way that makes sense to me and (hopefully) to others, makes me a better developer. It&apos;s also my way of giving back. 
         </p>
         
         <p>You can read my posts there:</p>

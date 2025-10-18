@@ -57,15 +57,15 @@ const About = () => {
 
           <div className="mt-5 space-y-5 sm:m-0 text-lg max-w-[450px] sm:w-1/2 font-medium text-gray-600 dark:text-gray-300 text-justify">
             <p>
-              Hi, I'm Alex, a self-taught fullstack web developer, focused on doing things right and leveling up.
+              Hi, I&apos;m Alex, a self-taught fullstack web developer, focused on doing things right and leveling up.
             </p>
 
             <p>
-              Over the past 12+ months of  consistent learning, the bugs and struggles have shaped me the most as a developer. They've taught me resilience and patience and made me care deeply about the quality of my work.
+              Over the past 12+ months of  consistent learning, the bugs and struggles have shaped me the most as a developer. They&apos;ve taught me resilience and patience and made me care deeply about the quality of my work.
             </p>
 
             <p>
-              I've been working with modern technologies like React, Next.js and MongoDB, growing more confident with every project, no matter how small.
+              I&apos;ve been working with modern technologies like React, Next.js and MongoDB, growing more confident with every project, no matter how small.
             </p>
 
             <p>

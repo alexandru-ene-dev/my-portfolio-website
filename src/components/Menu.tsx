@@ -35,7 +35,7 @@ const Menu = (
     }
 
     return () => document.removeEventListener('mousedown', handleOutsideClick);
-  }, [isMenuVisible]);
+  }, [isMenuVisible, setIsMenuVisible]);
 
 
   return (
