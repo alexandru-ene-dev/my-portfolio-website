@@ -22,10 +22,16 @@ export default function Header() {
       <Hamburger setIsMenuVisible={setIsMenuVisible} />
       
       <Link 
-        className="font-bold hover:scale-105 focus:scale-105 transition-[scale] duration-300" 
+        className="block font-bold flex-shrink-0" 
         href="#home"
       >
-        <Image className="dark:invert max-w-20 max-h-20 dark:opacity-90" src={logo} width={70} height={70} alt="Alexandru Ene's logo" />
+        <Image 
+          className="dark:invert dark:opacity-90 hover:scale-105 focus:scale-105 transition-[scale] duration-300 w-[70px] h-[40px]" 
+          src={logo} 
+          width={70} 
+          height={40} 
+          alt="Alexandru Ene's logo" 
+        />
       </Link>
       
       <div className="flex gap-5 items-center">

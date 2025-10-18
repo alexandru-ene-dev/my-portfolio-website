@@ -14,18 +14,17 @@ const Skills = () => {
     <section ref={ref} id="skills" className="relative max-w-[1400px] mx-auto scroll-mt-25">
 
       <div className="absolute inset-0 z-0">
-        <div className="absolute top-[60%] left-[80%] 408:top-20 -translate-1/2 w-[800px] h-[800px] rounded-full dark:[background-image:radial-gradient(circle_at_center,_rgba(247,192,72,0.3)_0%,_transparent_50%)] animate-pulse"></div>
+        <div className="absolute -z-20 top-[60%] left-[80%] 408:top-20 -translate-1/2 w-[500px] h-[500px] rounded-full dark:[background-image:radial-gradient(circle_at_center,_rgba(247,192,72,0.3)_0%,_transparent_50%)] animate-pulse"></div>
       </div>
 
       <div className="top-[60%] left-[80%] -translate-1/2 absolute 408:top-20 408:-rotate-20 flex justify-center items-center w-50 h-50 sm:w-70">
         <Image 
           className="opacity-5 dark:opacity-10 dark:invert" 
           src={lightBulbIcon} 
-          width={700} 
-          height={700} 
+          width={300} 
+          height={300} 
           alt=""
         />
-
       </div>
 
       <div className="relative max-w-150">

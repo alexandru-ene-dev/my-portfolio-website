@@ -2,6 +2,7 @@
 import DecorPic from '../../public/images/blog-decor.png';
 import Image from 'next/image';
 import useScrollAnimation from '@/hooks/useScrollAnimation';
+import Arrow from '../../public/icons/arrow.svg';
 
 
 const Blog = () => {
@@ -36,21 +37,21 @@ const Blog = () => {
         <p>You can read my posts there:</p>
 
         <a
-          className="block bg-black text-white px-5 py-3 w-full cursor-pointer font-bold rounded-md hover:bg-gray-600 focus:bg-gray-600 dark:hover:bg-gray-700 dark:focus:bg-gray-700 dark:bg-gray-800 dark:text-gray-200 transition-colors duration-300 text-lg text-center"
+          className="flex items-center justify-between bg-black text-white px-5 py-3 w-full cursor-pointer font-bold rounded-md hover:bg-gray-600 focus:bg-gray-600 dark:hover:bg-gray-700 dark:focus:bg-gray-700 dark:bg-gray-800 dark:text-gray-200 transition-colors duration-300 text-lg text-center"
           target="_blank"
           rel="noopener noreferrer" 
           href="https://dev.to/alexandru-ene-dev"
         >
-          Go to Dev.to -&gt;
+          <span>Go to Dev.to</span>
+
+          <Image 
+            className="animate-pulse" 
+            src={Arrow} 
+            width={40} 
+            height={40} 
+            alt="" 
+          />
         </a> 
-        
-        {/* <p>Or check them out right here on my website:</p>
-        <Link
-          className="block bg-black dark:bg-gray-800 dark:text-gray-200 text-white px-5 py-3 w-full cursor-pointer font-bold rounded-md hover:bg-gray-600 focus:bg-gray-600 dark:hover:bg-gray-700 dark:focus:bg-gray-700 transition-colors duration-300 text-center"
-          href="/posts"
-        >
-          Go to Blog -&gt;
-        </Link>  */}
       </div>
     </section>
   );

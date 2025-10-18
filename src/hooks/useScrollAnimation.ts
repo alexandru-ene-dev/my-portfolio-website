@@ -26,7 +26,7 @@ const useScrollAnimation = (direction: string) => {
 
         scrollTrigger: {
           trigger: scope,
-          start: "top 80%", 
+          start: "top 70%", 
           toggleActions: "play none none reverse",
         },
       });

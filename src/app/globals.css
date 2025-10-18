@@ -53,7 +53,71 @@ html {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-4180px); 
+    transform: translateX(-3520px); 
+  }
+}
+
+.spin {
+  animation-name: my-spin;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.reverse-spin {
+  animation-name: my-reverse-spin;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes my-spin {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes my-reverse-spin {
+  0% {
+    transform: rotateZ(360deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+.fill {
+  animation: fill 15s linear infinite;
+}
+
+@keyframes fill {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+.my-scale {
+  animation: scale 5s linear infinite;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 

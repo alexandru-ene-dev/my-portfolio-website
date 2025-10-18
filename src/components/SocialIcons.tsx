@@ -1,7 +1,6 @@
 import Image from "next/image";
 import EmailIcon from '../../public/icons/email.png';
 import LinkedInIcon from '../../public/icons/linkedin.png';
-import DiscordIcon from '../../public/icons/discord.png';
 import GitIcon from '../../public/icons/git.png';
 import DevIcon from '../../public/icons/dev.png';
 
@@ -43,7 +42,7 @@ const SocialIcons = () => {
           rel="noopener noreferrer"
         >
           <Image 
-            className="dark:invert" 
+            className="dark:invert w-[30px] h-[30px]" 
             src={GitIcon} 
             width={30} 
             height={30} 
@@ -68,7 +67,6 @@ const SocialIcons = () => {
       <li className="mt-2">
         <a 
           className="block text-center text-sm text-black dark:text-gray-300"
-          title="Send me a email" 
           href="mailto:alexandru.ene.dev@gmail.com" 
           aria-label="Send me an email"
         >

@@ -1,5 +1,5 @@
 'use client';
-import PictureOfMe from '../../public/images/me.jpg';
+import PictureOfMe from '../../public/images/me.webp';
 import CogIcon from '../../public/images/cog.png';
 import Image from 'next/image';
 import useScrollAnimation from '@/hooks/useScrollAnimation';
@@ -15,7 +15,7 @@ const About = () => {
       className="relative isolate mx-auto sm:flex sm:justify-center sm:items-center scroll-mt-[64px] lg:scroll-mt-[80px]"
     >
       <Image
-        className="absolute -z-20 top-0 right-0 opacity-4 dark:opacity-8 max-w-40 dark:invert [animation-name:spin] [animation-duration:10s] [animation-timing-function:linear] [--tw-keyframe-spin:from{transform:rotate(0deg);},to{transform:rotate(360deg);}] [animation-iteration-count:infinite] [animation-direction:reverse]"  
+        className="absolute -z-20 top-0 right-0 opacity-4 dark:opacity-8 max-w-40 dark:invert spin"  
         src={CogIcon} 
         height={200} 
         width={200} 
@@ -23,7 +23,7 @@ const About = () => {
       />
 
       <Image
-        className="absolute -z-20 top-20 right-30 opacity-4 dark:opacity-8 max-w-40 dark:invert [animation-name:spin] [animation-duration:10s] [animation-timing-function:linear] [--tw-keyframe-spin:from{transform:rotate(0deg);},to{transform:rotate(360deg);}] [animation-iteration-count:infinite]" 
+        className="absolute -z-20 top-20 right-30 opacity-4 dark:opacity-8 max-w-40 dark:invert reverse-spin" 
         src={CogIcon} 
         height={200} 
         width={200} 
@@ -31,7 +31,7 @@ const About = () => {
       />
 
       <Image
-        className="absolute -z-20 top-100 -left-10 opacity-3 dark:opacity-8 max-w-50 sm:max-w-70 dark:invert [animation-name:spin] [animation-duration:20s] [animation-timing-function:linear] [--tw-keyframe-spin:from{transform:rotate(0deg);},to{transform:rotate(360deg);}] [animation-iteration-count:infinite]" 
+        className="absolute -z-20 top-100 -left-10 opacity-3 dark:opacity-8 max-w-50 sm:max-w-70 dark:invert spin" 
         src={CogIcon} 
         height={700} 
         width={700} 
@@ -47,7 +47,7 @@ const About = () => {
         <div className="mt-15 max-w-100 mx-auto sm:flex sm:justify-center sm:gap-5 sm:max-w-300 md:max-w-240 lg:gap-10">
           <div className="relative max-w-[450px] isolate">
             <Image
-              className="w-full h-full max-h-[400px] object-cover rounded-full" 
+              className="w-full h-full object-cover aspect-auto rounded-full filter saturate-100" 
               src={PictureOfMe} 
               height={300} 
               width={300} 

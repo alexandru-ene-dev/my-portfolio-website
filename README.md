@@ -14,7 +14,6 @@ Take a look here: [Live Demo](alexandru-ene-dev-portfolio.vercel.app)
 - Downloadable resume
 - UX friendly
 - Responsive design for mobile and desktop
-- Blog section
 - Light/dark theme
 
 ## Technologies Used
@@ -39,6 +38,11 @@ npm install
 npm run dev
 
 ## Screenshots
+
+- (Home)[https://imgur.com/a/c9DMo9a]
+- (About)[https://imgur.com/a/7g3N5At]
+- (Dark Mode)[https://imgur.com/a/Iwu2oEr]
+- (Mobile)[https://imgur.com/a/jtLQ3eF]
 
 ## Contact
 

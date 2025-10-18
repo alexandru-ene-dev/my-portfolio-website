@@ -41,5 +41,22 @@
 
 **v5** - 16.10.2025
 
+- Designed the logo
+- Fixed Icons on all buttons
 
-More to come...
+---
+
+**v6** - 17.10.2025
+
+- Fixed positioning in skills section
+- Optimized images
+
+---
+
+**v7** - 18.10.2025
+
+- Changed home background
+- Edited images for better visuals
+- Added various animations and styling
+- Readme update: added screenshots
+- Added Favicon

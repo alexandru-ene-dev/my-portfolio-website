@@ -22,8 +22,6 @@ const SkillsList = () => {
           <li>Node.js</li>
           <li>Express.js</li>
           <li>MongoDB</li>
-          <li>SQL</li>
-          <li>PostgreSQL</li>
         </ul>
       </div>
 
@@ -35,7 +33,6 @@ const SkillsList = () => {
           <li>GitHub</li>
           <li>Postman</li>
           <li>Compass</li>
-          <li>Prisma</li>
           <li>Figma</li>
           <li>VSCode</li>
         </ul>

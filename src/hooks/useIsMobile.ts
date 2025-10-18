@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 
+
 const useIsMobile = (breakpoint: number = 1024) => {
   const [ isMobile, setIsMobile ] = useState<boolean>(true);
   const [ isResizing, setIsResizing ] = useState<boolean>(false); 
