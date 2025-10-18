@@ -39,10 +39,10 @@ npm run dev
 
 ## Screenshots
 
-- [Home](https://imgur.com/a/c9DMo9a)
-- [About](https://imgur.com/a/7g3N5At)
-- [Dark Mode](https://imgur.com/a/Iwu2oEr)
-- [Mobile](https://imgur.com/a/jtLQ3eF)
+- [Home](screenshots/screenshot-home.png)
+- [About](screenshots/screenshot-about.png)
+- [Dark Mode](screenshots/screenshot-dark.png)
+- [Mobile](screenshots/screenshot-mobile.png)
 
 ## Contact
 
