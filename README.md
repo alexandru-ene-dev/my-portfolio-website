@@ -6,7 +6,7 @@ This is my personal portfolio web page showcasing my work and my skills as a web
 
 ## Live Demo
 
-Take a look here: [Live Demo](alexandru-ene-dev-portfolio.vercel.app)
+Take a look here: [Live Demo](https://alexandru-ene-dev-portfolio.vercel.app)
 
 ## Features
 
@@ -39,10 +39,10 @@ npm run dev
 
 ## Screenshots
 
-- (Home)[https://imgur.com/a/c9DMo9a]
-- (About)[https://imgur.com/a/7g3N5At]
-- (Dark Mode)[https://imgur.com/a/Iwu2oEr]
-- (Mobile)[https://imgur.com/a/jtLQ3eF]
+- [Home](https://imgur.com/a/c9DMo9a)
+- [About](https://imgur.com/a/7g3N5At)
+- [Dark Mode](https://imgur.com/a/Iwu2oEr)
+- [Mobile](https://imgur.com/a/jtLQ3eF)
 
 ## Contact
 
