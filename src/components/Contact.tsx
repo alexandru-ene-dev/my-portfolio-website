@@ -9,7 +9,7 @@ const Contact = () => {
   const ref = useScrollAnimation('right');
 
   return (
-    <section id="contact" className="scroll-mt-[64px] lg:scroll-mt-[76px]">
+    <section id="contact" className="scroll-mt-[59px] lg:scroll-mt-[76px]">
       <div ref={ref} className="relative isolate">
         <div className="absolute top-0 bottom-0 -z-10 right-0 max-w-[800px]">
           <Image

@@ -17,8 +17,8 @@ const SocialIcons = () => {
           <Image 
             className="dark:invert" 
             src={EmailIcon} 
-            width={30} 
-            height={30} 
+            width={40} 
+            height={40} 
             alt="Send me an Email" 
           />
         </a>
@@ -31,8 +31,8 @@ const SocialIcons = () => {
           <Image
             className="dark:invert" 
             src={LinkedInIcon} 
-            width={30} 
-            height={30} 
+            width={40} 
+            height={40} 
             alt="Visit my LinkedIn Profile" 
           />
         </a>
@@ -43,10 +43,10 @@ const SocialIcons = () => {
           rel="noopener noreferrer"
         >
           <Image 
-            className="dark:invert w-[30px] h-[30px]" 
+            className="dark:invert w-[40px] h-[40px]" 
             src={GitIcon} 
-            width={30} 
-            height={30} 
+            width={40} 
+            height={40} 
             alt="Check out my GitHub" 
           />
         </a>
@@ -58,8 +58,8 @@ const SocialIcons = () => {
         >
           <Image 
             src={DevIcon} 
-            width={30} 
-            height={30} 
+            width={40} 
+            height={40} 
             alt="See my work on Dev.to" 
           />
         </a>
@@ -67,7 +67,7 @@ const SocialIcons = () => {
 
       <li className="mt-2">
         <a 
-          className="block text-center text-sm text-black dark:text-gray-300"
+          className="block text-center text-lg text-black dark:text-gray-300"
           href="mailto:alexandru.ene.dev@gmail.com" 
           aria-label="Send me an email"
         >

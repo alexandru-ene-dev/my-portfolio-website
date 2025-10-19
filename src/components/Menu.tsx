@@ -56,7 +56,7 @@ const Menu = (
 
       <div className="flex flex-col gap-y-5 justify-between h-[calc(100%-44px)]">
         <nav>
-          <ul className="flex flex-col text-lg lg:flex-row dark:text-gray-300">
+          <ul className="flex flex-col text-xl lg:text-lg lg:flex-row dark:text-gray-300 divide-y-1 divide-gray-400 lg:divide-y-0">
             <Link 
               onClick={() => setIsMenuVisible(false)} 
               className="p-2 lg:px-3 lg:hover:scale-115 lg:focus:scale-115 transition-[scale] duration-300" href="#home"
@@ -97,8 +97,8 @@ const Menu = (
         <div className="lg:hidden mt-8">
           <SocialIcons />
 
-          <div className="text-sm text-gray-500 font-medium mt-8">
-            <Footer />
+          <div className="text-base text-gray-500 font-medium mt-5">
+            <Footer isMenuVisible={isMenuVisible} setIsMenuVisible={setIsMenuVisible} />
           </div>
         </div>
       </div>

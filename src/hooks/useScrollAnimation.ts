@@ -19,7 +19,7 @@ const useScrollAnimation = (direction: string) => {
       gsap.from(scope, {
         opacity: 0,
         scale: 0.85,
-        duration: 1.5,
+        duration: 2,
         ease: "power3.out",
 
         scrollTrigger: {

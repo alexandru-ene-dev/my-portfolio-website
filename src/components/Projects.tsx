@@ -12,7 +12,7 @@ const Projects = () => {
   return (
     <section  
       id="projects" 
-      className="scroll-mt-[64px] lg:scroll-mt-[76px]"
+      className="scroll-mt-[59px] lg:scroll-mt-[76px]"
     >
       <div ref={ref} className="relative isolate">
         <Image

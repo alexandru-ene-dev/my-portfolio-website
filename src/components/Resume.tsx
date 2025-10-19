@@ -10,7 +10,7 @@ const Resume = () => {
   const ref = useScrollAnimation('left');
   
   return (
-    <section id="resume" className="scroll-mt-[64px] lg:scroll-mt-[76px]">
+    <section id="resume" className="scroll-mt-[59px] lg:scroll-mt-[76px]">
       <div ref={ref} className="relative isolate">
         <div className="md:w-[60%] md:h-[60%] absolute right-0 -top-20 sm:top-70 sm:-left-10 -z-10 -rotate-15">
           <Image

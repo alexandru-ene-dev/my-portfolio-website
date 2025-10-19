@@ -11,7 +11,7 @@ const Skills = () => {
 
 
   return (
-    <section  id="skills" className="scroll-mt-[64px] lg:scroll-mt-[76px]">
+    <section  id="skills" className="scroll-mt-[59px] lg:scroll-mt-[76px]">
       <div ref={ref} className="relative">
         <div className="absolute inset-0 z-0">
           <div className="absolute -z-20 top-[60%] left-[80%] 408:top-20 -translate-1/2 w-[500px] h-[500px] rounded-full dark:[background-image:radial-gradient(circle_at_center,_rgba(247,192,72,0.3)_0%,_transparent_50%)] animate-pulse"></div>

@@ -1,13 +1,24 @@
+'use client'
 import Link from 'next/link';
 import Image from 'next/image';
 import logo from '../../public/icons/logo.png';
+import type { Dispatch, SetStateAction } from 'react';
 
 
-export default function Footer() {
+export default function Footer(
+  { isMenuVisible, setIsMenuVisible }:
+  { 
+    isMenuVisible: boolean,
+    setIsMenuVisible: Dispatch<SetStateAction<boolean>>
+  }
+) {
   return (
     <footer className="space-y-5">
-      <Link 
-        className="block font-bold hover:scale-105 focus:scale-105 transition-[scale] duration-300" 
+      <Link
+        onClick={() => {
+          if (isMenuVisible) setIsMenuVisible(false);
+        }} 
+        className="block font-bold hover:scale-110 focus:scale-110 transition-[scale] duration-300" 
         href="#home"
       >
         <Image className="block mx-auto dark:invert" src={logo} width={70} height={70} alt="Alexandru Ene's logo" />

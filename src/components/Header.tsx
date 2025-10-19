@@ -24,10 +24,10 @@ export default function Header() {
         href="#home"
       >
         <Image 
-          className="dark:invert dark:opacity-90 hover:scale-105 focus:scale-105 transition-[scale] duration-300 w-[70px] h-[40px]" 
+          className="dark:invert dark:opacity-90 hover:scale-110 focus:scale-110 transition-[scale] duration-300 w-[55px] h-[30px]" 
           src={logo} 
-          width={70} 
-          height={40} 
+          width={55} 
+          height={30} 
           alt="Alexandru Ene's logo" 
         />
       </Link>

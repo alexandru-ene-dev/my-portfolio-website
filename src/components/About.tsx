@@ -11,7 +11,7 @@ const About = () => {
   return (
     <section
       id="about" 
-      className="scroll-mt-[64px] lg:scroll-mt-[76px]"
+      className="scroll-mt-[59px] lg:scroll-mt-[76px]"
     >
       <div ref={ref} className="relative isolate sm:flex sm:justify-center sm:items-center">
         <Image
@@ -57,11 +57,11 @@ const About = () => {
 
             <div className="mt-5 space-y-5 sm:m-0 text-lg max-w-[450px] sm:w-1/2 font-medium text-gray-600 dark:text-gray-300 text-justify">
               <p>
-                Hi, I&apos;m Alex, a self-taught fullstack web developer, focused on doing things right and leveling up.
+                Hi, I&apos;m Alex, a <span className="font-bold">Fullstack Web Developer</span>. As a self-taught developer, my commitment is leveling up and ensuring every project is built right.
               </p>
 
               <p>
-                Over the past 12+ months of  consistent learning, the bugs and struggles have shaped me the most as a developer. They&apos;ve taught me resilience and patience and made me care deeply about the quality of my work.
+                Over the past 12+ months of consistent learning, the bugs and struggles have shaped me the most as a developer. They&apos;ve taught me resilience and patience and made me care deeply about the quality of my work.
               </p>
 
               <p>

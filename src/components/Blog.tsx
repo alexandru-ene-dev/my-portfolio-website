@@ -10,7 +10,7 @@ const Blog = () => {
 
   
   return (
-    <section id="blog" className="scroll-mt-[64px] lg:scroll-mt-[76px]">
+    <section id="blog" className="scroll-mt-[59px] lg:scroll-mt-[76px]">
       <div ref={ref} className="relative isolate">
         <Image
           className="block max-w-100 max-h-100 w-full h-full opacity-20 lg:opacity-25 lg:object-fill lg:w-[60%] right-0 absolute -top-20 md:max-w-400 md:max-h-400 md:top-0 -z-10 filter contrast-0 -rotate-20" 
