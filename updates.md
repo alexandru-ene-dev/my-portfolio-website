@@ -61,6 +61,7 @@
 - Readme update: added screenshots
 - Added Favicon
 
-**v8** - 10.10.2025
+**v8** - 19.10.2025
 
 - Fixed animations and overflow issues
+- Worked on design
