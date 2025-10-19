@@ -56,7 +56,7 @@ const Menu = (
 
       <div className="flex flex-col gap-y-5 justify-between h-[calc(100%-44px)]">
         <nav>
-          <ul className="flex flex-col lg:flex-row lg:text-xl dark:text-gray-300">
+          <ul className="flex flex-col lg:flex-row lg:text-lg dark:text-gray-300">
             <Link 
               onClick={() => setIsMenuVisible(false)} 
               className="p-2 lg:px-3 lg:hover:scale-115 lg:focus:scale-115 transition-[scale] duration-300" href="#home"

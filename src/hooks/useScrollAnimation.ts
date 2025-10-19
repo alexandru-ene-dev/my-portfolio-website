@@ -15,12 +15,10 @@ const useScrollAnimation = (direction: string) => {
     gsap.registerPlugin(ScrollTrigger);
     
     const ctx = gsap.context(() => {    
-      const xStart = direction === 'left' ? -200 : 200;
 
       gsap.from(scope, {
-        opacity: 0,   
-        x: xStart,    
-        scale: 0.85, 
+        opacity: 0,
+        scale: 0.85,
         duration: 1.5,
         ease: "power3.out",
 

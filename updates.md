@@ -60,3 +60,7 @@
 - Added various animations and styling
 - Readme update: added screenshots
 - Added Favicon
+
+**v8** - 10.10.2025
+
+- Fixed animations and overflow issues
