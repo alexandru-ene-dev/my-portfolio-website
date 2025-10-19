@@ -4,6 +4,7 @@ import LinkedInIcon from '../../public/icons/linkedin.png';
 import GitIcon from '../../public/icons/git.png';
 import DevIcon from '../../public/icons/dev.png';
 
+
 const SocialIcons = () => {
   return (
     <ul>

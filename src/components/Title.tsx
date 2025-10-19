@@ -1,6 +1,7 @@
 import MeAtWorkPic from '../../public/images/me-at-work.webp';
 import Image from 'next/image';
 
+
 const Title = () => {
   return (
     <section id="home" className="relative h-[100vh] max-w-[1400px] mx-auto flex items-center">

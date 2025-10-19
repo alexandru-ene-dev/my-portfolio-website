@@ -33,7 +33,7 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: themeInitializerScript }}/>     
       </head>
 
-      <body className="bg-gray-300 dark:bg-[hsl(220,43%,4%)]">
+      <body className="bg-gray-300 dark:bg-[hsl(220,43%,4%)] overflow-x-hidden">
         <div className="space-y-20 max-w-[1100px] bg-gray-200 dark:dark:bg-[hsl(220,43%,9%)] dark:shadow-[hsl(220,43%,25%)] mx-auto shadow-xl shadow-gray-400 dark:shadow-lg">
           <div className="px-[clamp(1em,5vw,5em)] pb-[clamp(1em,3vw,3em)]">
             <Header />

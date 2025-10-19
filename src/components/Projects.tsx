@@ -10,7 +10,7 @@ const Projects = () => {
   const ref = useScrollAnimation('right');
   
   return (
-    <section ref={ref} id="projects" className="relative isolate mx-auto scroll-mt-[64px] lg:scroll-mt-[80px]">
+    <section ref={ref} id="projects" className="relative isolate scroll-mt-[64px] lg:scroll-mt-[80px]">
 
       <Image
         className="opacity-20 dark:opacity-25 lg:opacity-25 lg:object-fill lg:w-[60%] absolute -z-10 filter contrast-0 max-w-150 max-h-150 -top-10 left-0 sm:right-0 sm:left-auto sm:max-w-700 sm:max-h-700" 

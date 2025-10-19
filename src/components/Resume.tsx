@@ -85,9 +85,7 @@ const Resume = () => {
             alt="" 
           />
         </a>
-
       </div>
-
     </section>
   );
 };
