@@ -1,17 +1,18 @@
-import MeAtWorkPic from '../../public/images/me-at-work.webp';
+import MeAtWorkPic from '../../public/images/me-at-work.png';
 import Image from 'next/image';
 
 
 const Title = () => {
   return (
-    <section id="home" className="relative h-[100vh] mx-auto flex items-center">
+    <section id="home" className="relative h-[100vh] flex items-center">
       <Image 
-        className="object-cover w-full h-full max-w-[800px] contrast-100 saturate-100 right-0 absolute" 
+        className="object-cover w-full h-full max-w-[800px] contrast-100 saturate-100 right-0 absolute filter grayscale-50" 
         src={MeAtWorkPic} 
         width={800} 
         height={800} 
         alt="" 
       />
+
       <div className="flex justify-center items-center absolute inset-0 z-20 px-3">
         <div className="flex-grow text-white dark:text-gray-200 xl:max-w-250">
           <h1 className="text-[clamp(2rem,8vw,6rem)] font-bold text-shadow-sm text-shadow-gray-500">Alexandru Ene</h1>
