@@ -43,6 +43,7 @@ npm run dev
 - [About](screenshots/screenshot-about.png)
 - [Dark Mode](screenshots/screenshot-dark.png)
 - [Mobile](screenshots/screenshot-mobile.png)
+- [Skills](screenshots/screenshot-skills.png)
 
 ## Contact
 
@@ -52,3 +53,7 @@ Leave me a message and I'll get in touch as soon as possible!
 - **LinkedIn**: [alexandru-ene-dev](https://www.linkedin.com/in/alexandru-ene-dev)
 - **Dev**: [alexandru-ene-dev](https://dev.to/alexandru-ene-dev)
 - **Discord**: alexandru.ene.dev
+
+## A few words
+
+If you liked this project, give it a star and leave a comment! Your feedback is welcome! Thank you! 

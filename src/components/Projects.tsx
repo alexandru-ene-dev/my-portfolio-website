@@ -60,6 +60,23 @@ const Projects = () => {
               alt="" 
             />
           </a>
+
+          <a 
+            href="https://github.com/alexandru-ene-dev/ecommerce-website" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center justify-between bg-black text-white dark:bg-gray-800 dark:text-gray-200 px-5 py-3 w-full cursor-pointer font-bold rounded-md hover:bg-gray-600 focus:bg-gray-600 dark:hover:bg-gray-700 dark:focus:bg-gray-700 transition-colors duration-300 text-lg text-center mt-5"
+          >
+            <span>See on GitHub</span>
+
+            <Image 
+              className="animate-pulse" 
+              src={Arrow} 
+              width={40} 
+              height={40} 
+              alt="" 
+            />
+          </a>
         </div>
       </div>
     </section>

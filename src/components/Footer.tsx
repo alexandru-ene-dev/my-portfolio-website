@@ -8,15 +8,15 @@ import type { Dispatch, SetStateAction } from 'react';
 export default function Footer(
   { isMenuVisible, setIsMenuVisible }:
   { 
-    isMenuVisible: boolean,
-    setIsMenuVisible: Dispatch<SetStateAction<boolean>>
+    isMenuVisible?: boolean,
+    setIsMenuVisible?: Dispatch<SetStateAction<boolean>>
   }
 ) {
   return (
     <footer className="space-y-5">
       <Link
         onClick={() => {
-          if (isMenuVisible) setIsMenuVisible(false);
+          if (isMenuVisible && setIsMenuVisible) setIsMenuVisible(false);
         }} 
         className="block font-bold hover:scale-110 focus:scale-110 transition-[scale] duration-300" 
         href="#home"
