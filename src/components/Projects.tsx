@@ -42,7 +42,7 @@ const Projects = () => {
 
           <h3 className="text-lg font-bold text-black dark:text-gray-200">Progressio - E-commerce Web Platform</h3>
 
-          <p className="text-lg font-medium text-gray-600 dark:text-gray-300">Fullstack web platform that features product listing and search, cart and favorites system and authentication </p>
+          <p className="text-lg font-medium text-gray-600 dark:text-gray-300">Fullstack web platform that features product listing and search, cart and favorites system and authentication. Built with React, Express, MongoDB and Typescript. Deployed with Vercel and Render.</p>
 
           <a 
             href="https://progressio-ecommerce-website.vercel.app" 

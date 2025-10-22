@@ -32,7 +32,7 @@ const Skills = () => {
           <div className="bg-black dark:bg-gray-200 h-[6px] lg:h-2 absolute w-full"></div>
         </div>
 
-        <div className="mx-auto mt-15 flex justify-center sm:justify-between flex-wrap gap-10 max-w-150">
+        <div className="mx-auto mt-15 flex sm:justify-between flex-wrap gap-10 max-w-200">
           <SkillsList />
         </div>
 
